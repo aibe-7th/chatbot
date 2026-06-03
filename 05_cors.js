@@ -35,9 +35,9 @@ const PORT = process.env.RENDER === 'true' ? 10000 : 3000;
 //   Access-Control-Allow-Origin: http://127.0.0.1:5500
 // ─────────────────────────────────────────────
 
-// CORS Whitelist 설정 (단일 값만 허용)
-// - .env 파일의 CORS_ORIGINS 환경변수를 그대로 사용합니다.
-const whitelist = process.env.CORS_ORIGINS;
+// CORS Whitelist 설정 (쉼표로 구분하여 여러 개 지정 가능)
+// - 예: CORS_ORIGINS=http://127.0.0.1:5500,https://aibe-7th.github.io
+const whitelist = (process.env.CORS_ORIGINS ?? '').split(',').map(s => s.trim()).filter(Boolean);
 
 // 모든 Origin을 조건 없이 허용하려면 단순히 다음과 같이 선언합니다:
 // app.use(cors());
@@ -45,7 +45,7 @@ const whitelist = process.env.CORS_ORIGINS;
 app.use(cors({
     origin: (origin, callback) => {
         // 1. origin이 없는 경우 (curl, Postman 등 non-browser) 허용
-        // 2. whitelist와 일치하는 경우 허용
+        // 2. whitelist에 포함된 경우 허용
         // 3. 서버 자체의 origin (same-origin)인 경우 허용
         const sameOriginLocalhost = `http://localhost:${PORT}`;
         const sameOriginIP = `http://127.0.0.1:${PORT}`;
@@ -53,7 +53,7 @@ app.use(cors({
 
         if (
             !origin ||
-            origin === whitelist ||
+            whitelist.includes(origin) ||
             origin === sameOriginLocalhost ||
             origin === sameOriginIP ||
             (sameOriginRender && origin === sameOriginRender)

@@ -2,6 +2,10 @@
 
 이 프로젝트는 Express 프레임워크와 LLM API(Gemini, Groq)를 연동하여 동일 출처 정책(SOP)과 교차 출처 리소스 공유(CORS) 개념을 학습하고 실습하는 프로젝트입니다.
 
+## 배포 링크
+- **프론트엔드 (GitHub Pages):** https://aibe-7th.github.io/
+- **백엔드 API (Render.com):** https://chatbot-labj.onrender.com/
+
 ## 파일 구성 및 단계
 1. **`01_express.js`**: 기초 Express 웹 서버 구축 및 라우팅 템플릿
 2. **`02_axios.js`**: Axios를 활용한 Groq / Gemini API 연동 (Raw HTTP 요청)
@@ -20,7 +24,7 @@
 ```env
 GEMINI_API_KEY=your_gemini_api_key
 GROQ_API_KEY=your_groq_api_key
-CORS_ORIGINS=http://127.0.0.1:5500
+CORS_ORIGINS=http://127.0.0.1:5500,https://aibe-7th.github.io
 ```
 
 ### 2. 패키지 설치
