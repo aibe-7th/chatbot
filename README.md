@@ -26,21 +26,18 @@
 
 ## 시작하기
 
-### 1. 환경변수 설정
+### 환경변수 설정
 `.env.sample` 파일을 참고하여 루트 디렉토리에 `.env` 파일을 생성하고 API 키 및 오리진을 설정합니다.
 ```env
 GEMINI_API_KEY=your_gemini_api_key
 GROQ_API_KEY=your_groq_api_key
-CORS_ORIGINS=http://127.0.0.1:5500,https://aibe-7th.github.io
+CORS_ORIGINS=http://127.0.0.1:5500,https://{본인 GitHub Username}.github.io
 ```
 
-### 2. 패키지 설치
+### 터미널 명령어 입력 
 ```bash
-npm install
-```
-
-### 3. 실행
-서버를 실행합니다.
-```bash
+# 패키지 설치
+npm i
+# 서버를 실행
 npm start
 ```
