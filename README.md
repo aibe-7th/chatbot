@@ -34,9 +34,9 @@ npm install
 # SOP 예제 실행 (챗봇 UI: http://localhost:3000/)
 npm run 04
 
-# CORS 예제 실행 (Live Server 포트 5500으로 public/index.html 구동 필요)
+# CORS 예제 실행 (Live Server 포트 5500으로 public/index.html 구동 대응)
 npm run 05
 
-# 혹은 start 스크립트 실행 (nodemon 05_cors.js)
+# 혹은 start 스크립트 실행 (node 05_cors.js)
 npm start
 ```

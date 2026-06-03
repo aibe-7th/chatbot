@@ -1,7 +1,8 @@
 // 04_sop.js: Express가 같은 포트(3000)에서 서빙 → 동일 출처
 // 05_cors.js: Live Server(5500)에서 열 경우 → cross-origin → 서버에 CORS 설정 필요
-// const API_URL = 'http://localhost:3000/chat';
-const API_URL = '/chat'; // SOP 배포 시
+const API_URL = 'http://localhost:3000/chat'; // 로컬 테스트 시
+// const API_URL = '/chat'; // SOP 배포 시
+// const API_URL = 'https://chatbot-labj.onrender.com/chat'; // CORS 배포 시 (Render)
 // CORS 상황 시 (GitHub Pages) render 배포된 경로로
 const STORAGE_KEY = 'chatHistory'; // localStorage 키
 
