@@ -32,15 +32,8 @@ CORS_ORIGINS=http://127.0.0.1:5500,https://aibe-7th.github.io
 npm install
 ```
 
-### 3. 실습 실행
-각 단계별 서버를 다음 명령어로 실행합니다.
+### 3. 실행
+서버를 실행합니다.
 ```bash
-# SOP 예제 실행 (챗봇 UI: http://localhost:3000/)
-npm run 04
-
-# CORS 예제 실행 (Live Server 포트 5500으로 public/index.html 구동 대응)
-npm run 05
-
-# 혹은 start 스크립트 실행 (node 05_cors.js)
 npm start
 ```
