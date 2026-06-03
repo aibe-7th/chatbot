@@ -5,7 +5,7 @@ const Groq = require('groq-sdk');
 const { GoogleGenAI } = require('@google/genai');
 
 // npm run 04
-// http://localhost:3000 에서 프론트엔드 + 백엔드 동일 출처 → CORS 문제 없음
+// http://localhost:3000 에서 프런트엔드 + 백엔드 동일 출처 → CORS 문제 없음
 
 const app = express();
 app.use(express.json());
@@ -17,7 +17,7 @@ app.use(express.json());
 // origin = 프로토콜 + 호스트 + 포트 (셋 중 하나라도 다르면 cross-origin)
 //
 // 여기서는 Express가 public/ 폴더를 직접 서빙하므로
-// 프론트엔드(localhost:3000)와 API(localhost:3000)가 같은 출처
+// 프런트엔드(localhost:3000)와 API(localhost:3000)가 같은 출처
 // → 브라우저가 요청을 차단하지 않음 (CORS 설정 불필요)
 // ─────────────────────────────────────────────
 
@@ -41,7 +41,7 @@ const MODELS = {
     'dense':  { provider: 'aistudio',  id: 'gemma-4-31b-it' },
 };
 
-// POST /chat - 프론트엔드에서 호출하는 단일 엔드포인트
+// POST /chat - 프런트엔드에서 호출하는 단일 엔드포인트
 app.post('/chat', async (req, res) => {
     const { model = 'flash', message, summary = '' } = req.body;
 

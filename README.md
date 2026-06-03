@@ -1,9 +1,16 @@
 # AI 챗봇 실습 프로젝트 (SOP & CORS)
 
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)](#)
+[![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)](#)
+[![Gemini](https://img.shields.io/badge/Gemini-8E75C2?style=flat-square&logo=googlegemini&logoColor=white)](#)
+[![Groq](https://img.shields.io/badge/Groq-F55000?style=flat-square)](#)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](#)
+
 이 프로젝트는 Express 프레임워크와 LLM API(Gemini, Groq)를 연동하여 동일 출처 정책(SOP)과 교차 출처 리소스 공유(CORS) 개념을 학습하고 실습하는 프로젝트입니다.
 
 ## 배포 링크
-- **프론트엔드 (GitHub Pages):** https://aibe-7th.github.io/
+- **프런트엔드 (GitHub Pages):** https://aibe-7th.github.io/
 - **백엔드 API (Render.com):** https://chatbot-labj.onrender.com/
 
 ## 파일 구성 및 단계
@@ -14,8 +21,8 @@
 5. **`05_cors.js`**: CORS 정책 활성화, 대화 요약 맥락 주입 및 Render 클라우드 배포 최적화 예제
 
 ## 폴더 구조
-- `pages/`: SOP 실습용 챗봇 프론트엔드 코드 (`index.html`)
-- `public/`: CORS 테스트용 챗봇 프론트엔드 및 스크립트 (`index.html`, `script.js`)
+- `pages/`: SOP 실습용 챗봇 프런트엔드 코드 (`index.html`)
+- `public/`: CORS 테스트용 챗봇 프런트엔드 및 스크립트 (`index.html`, `script.js`)
 
 ## 시작하기
 
