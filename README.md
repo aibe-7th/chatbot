@@ -10,7 +10,7 @@
 이 프로젝트는 Express 프레임워크와 LLM API(Gemini, Groq)를 연동하여 동일 출처 정책(SOP)과 교차 출처 리소스 공유(CORS) 개념을 학습하고 실습하는 프로젝트입니다.
 
 ## 배포 링크
-- **프런트엔드 (GitHub Pages):** https://aibe-7th.github.io/
+- **프런트엔드 (GitHub Pages):** https://aibe-7th.github.io/chatbot
 - **백엔드 API (Render.com):** https://chatbot-labj.onrender.com/
 
 ## 파일 구성 및 단계
